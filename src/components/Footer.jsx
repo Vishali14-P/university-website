@@ -1,7 +1,15 @@
 function Footer() {
     return (
         <footer className="footer">
-            <p>© 2026 LISH. All Rights Reserved.</p>
+            <div className="footer-content">
+                <h3>ASTRA University</h3>
+                <p>Contact Us: astrauniversity@gmail.com</p>
+                <div className="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
         </footer>
     );
 }

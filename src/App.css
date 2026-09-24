@@ -4,16 +4,6 @@ body,
     min-height: 100%;
     margin: 0;
 }
-
-.app {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-content {
-    flex: 1;
-}
 * {
     box-sizing: border-box;
 }
@@ -22,7 +12,16 @@ body {
     font-family: Montserrat;
     color: #222;
 }
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    flex: 1;
+}
 .header {
+    min-height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,33 +29,27 @@ body {
     background-color: #12355b;
     color: white;
 }
-
 .logo-section {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .logo {
     font-size: 35px;
 }
-
 .logo-section h2 {
     margin: 0;
     color: white;
 }
-
 nav {
     display: flex;
     gap: 25px;
 }
-
 nav a {
     color: white;
     text-decoration: none;
     font-size: 17px;
 }
-
 nav a:hover {
     color: #dbeafe;
 }
@@ -117,6 +110,19 @@ nav a:hover {
 .hero-content button:hover {
     background-color: #1d568d;
 }
+.explore-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #12355b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.explore-button:hover {
+    background-color: #1d568d;
+}
 .hero-card {
     flex: 0 0 350px;
     padding: 40px;
@@ -161,15 +167,41 @@ nav a:hover {
     line-height: 1.5;
 }
 .footer {
-    padding: 25px;
-    text-align: center;
+    padding: 15px 8%;
     background-color: #12355b;
     color: white;
 }
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footer h3 {
+    margin: 0;
+}
+.footer p {
+    margin: 0;
+}
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #dbeafe;
+}
 @media (max-width: 700px) {
+
     .header {
+        min-height: auto;
         flex-direction: column;
         gap: 15px;
+        padding: 15px 8%;
     }
     nav {
         flex-wrap: wrap;
@@ -181,11 +213,9 @@ nav a:hover {
         text-align: center;
         padding: 50px 20px;
     }
-
     .hero-content h1 {
         font-size: 34px;
     }
-
     .hero-card {
         width: 100%;
         max-width: 400px;
@@ -195,9 +225,13 @@ nav a:hover {
         flex-direction: column;
         align-items: center;
     }
-
     .card {
         width: 100%;
         max-width: 400px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
