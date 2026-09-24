@@ -1,17 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #222;
 }
-
-/* =========================
-   HEADER
-========================= */
-
 .header {
     display: flex;
     align-items: center;
@@ -50,11 +44,6 @@ nav a {
 nav a:hover {
     color: #dbeafe;
 }
-
-/* =========================
-   HOME / HERO SECTION
-========================= */
-
 .hero {
     min-height: 500px;
     display: flex;
@@ -62,17 +51,11 @@ nav a:hover {
     justify-content: space-between;
     gap: 60px;
     padding: 70px 10%;
-
-    /* Background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     position: relative;
 }
-
-/* Dark overlay */
-
 .hero::before {
     content: "";
     position: absolute;
@@ -82,41 +65,29 @@ nav a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.45);
 }
-
-/* Keep content above overlay */
-
 .hero-content,
 .hero-card {
     position: relative;
     z-index: 1;
 }
-
-/* Hero Content */
-
 .hero-content {
     flex: 1;
     max-width: 600px;
     color: white;
 }
-
 .hero-content > p:first-child {
     font-size: 18px;
     margin-bottom: 10px;
 }
-
 .hero-content h1 {
     font-size: 44px;
     line-height: 1.15;
     margin: 10px 0 20px;
 }
-
 .hero-content p {
     font-size: 18px;
     line-height: 1.6;
 }
-
-/* Explore Courses Button */
-
 .hero-content button {
     margin-top: 15px;
     padding: 12px 25px;
@@ -127,13 +98,9 @@ nav a:hover {
     font-size: 16px;
     cursor: pointer;
 }
-
 .hero-content button:hover {
     background-color: #1d568d;
 }
-
-/* Hero Card */
-
 .hero-card {
     flex: 0 0 350px;
     padding: 40px;
@@ -142,39 +109,25 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-
 .college-icon {
     font-size: 60px;
 }
-
 .hero-card h2 {
     margin-top: 15px;
 }
-
-/* =========================
-   COMMON SECTIONS
-========================= */
-
 .section {
     padding: 70px 10%;
     text-align: center;
 }
-
 .section h2 {
     font-size: 32px;
     margin-bottom: 20px;
 }
-
 .section > p {
     max-width: 800px;
     margin: auto;
     line-height: 1.7;
 }
-
-/* =========================
-   CARDS
-========================= */
-
 .cards {
     display: flex;
     justify-content: center;
@@ -182,50 +135,31 @@ nav a:hover {
     gap: 25px;
     margin-top: 30px;
 }
-
 .card {
     width: 30%;
     padding: 25px;
     background-color: #f4f7fb;
     border-radius: 8px;
 }
-
 .card p {
     line-height: 1.5;
 }
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     padding: 25px;
     text-align: center;
     background-color: #12355b;
     color: white;
 }
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
 @media (max-width: 700px) {
-
-    /* Header */
-
     .header {
         flex-direction: column;
         gap: 15px;
     }
-
     nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
-
-    /* Hero */
-
     .hero {
         flex-direction: column;
         text-align: center;
@@ -241,9 +175,6 @@ nav a:hover {
         max-width: 400px;
         flex: none;
     }
-
-    /* Cards */
-
     .cards {
         flex-direction: column;
         align-items: center;

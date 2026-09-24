@@ -5,7 +5,6 @@ import Departments from "./components/Departments";
 import Courses from "./components/Courses";
 import Footer from "./components/Footer";
 import "./App.css";
-
 function App() {
     return (
         <>
