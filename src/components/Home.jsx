@@ -1,8 +1,8 @@
 import collegeBg from "../assets/college.jpg";
+import { Link } from "react-router-dom";
 function Home() {
     return (
         <section
-            id="home"
             className="hero"
             style={{ backgroundImage: `url(${collegeBg})` }}
         >
@@ -13,13 +13,9 @@ function Home() {
                     ASTRA provides quality education, practical learning,
                     and opportunities to help students build a successful future.
                 </p>
-                <button
-                    onClick={() => {
-                        document.getElementById("courses").scrollIntoView();
-                    }}
-                >
+                <Link to="/courses" className="explore-button">
                     Explore Courses
-                </button>
+                </Link>
             </div>
             <div className="hero-card">
                 <div className="college-icon">🎓</div>

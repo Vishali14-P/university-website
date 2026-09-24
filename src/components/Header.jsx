@@ -1,15 +1,15 @@
+import { Link } from "react-router-dom";
 function Header() {
     return (
         <header className="header">
             <div className="logo-section">
-                <div className="logo">🎓</div>
                 <h2>ASTRA University</h2>
             </div>
             <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#departments">Departments</a>
-                <a href="#courses">Courses</a>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/departments">Departments</Link>
+                <Link to="/courses">Courses</Link>
             </nav>
         </header>
     );
