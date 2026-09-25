@@ -1,4 +1,5 @@
 import collegeBg from "../assets/college.jpg";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 function Home() {
     return (
@@ -18,7 +19,11 @@ function Home() {
                 </Link>
             </div>
             <div className="hero-card">
-                <div className="college-icon">🎓</div>
+                <img
+                    src={logo}
+                    alt="College Logo"
+                    className="hero-logo"
+                />
                 <h2>Education & Innovation</h2>
                 <p>
                     Developing knowledge, skills and confidence for tomorrow.
