@@ -1,4 +1,4 @@
-function DepartmentCard({ name, description }) {
+function DepartmentCard({name, description}) {
     return (
         <div className="card">
             <h3>{name}</h3>

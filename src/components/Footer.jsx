@@ -3,7 +3,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <h3>SRM EASWARI ENGINEERING COLLEGE</h3>
-                <p>Contact Us: eec.srmrmp@gmail.com</p>
+                <p>Contact Us: eec@srmrmp.edu.in</p>
                 <div className="social-links">
                     <a href="#">Facebook</a>
                     <a href="#">Instagram</a>
