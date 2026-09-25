@@ -7,10 +7,10 @@ function Home() {
             style={{ backgroundImage: `url(${collegeBg})` }}
         >
             <div className="hero-content">
-                <p>WELCOME TO ASTRA INSTITUTE OF TECHNOLOGY</p>
+                <p>WELCOME TO SRM EASWARI ENGINEERING COLLEGE</p>
                 <h1>Learn Today, Lead Tomorrow</h1>
                 <p>
-                    ASTRA provides quality education, practical learning,
+                    SRM EASWARI ENGINEERING COLLEGE provides quality education, practical learning,
                     and opportunities to help students build a successful future.
                 </p>
                 <Link to="/courses" className="explore-button">

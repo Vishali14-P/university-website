@@ -34,6 +34,11 @@ body {
     align-items: center;
     gap: 10px;
 }
+.college-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
 .logo {
     font-size: 35px;
 }
@@ -54,7 +59,7 @@ nav a:hover {
     color: #dbeafe;
 }
 .hero {
-    min-height: 500px;
+    min-height: calc(100vh - 75px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,7 +131,7 @@ nav a:hover {
 .hero-card {
     flex: 0 0 350px;
     padding: 40px;
-    background-color: white;
+    background-color: #eaf2f8;
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -195,6 +200,7 @@ nav a:hover {
 .social-links a:hover {
     color: #dbeafe;
 }
+
 @media (max-width: 700px) {
 
     .header {
@@ -234,4 +240,5 @@ nav a:hover {
         text-align: center;
         gap: 10px;
     }
+    
 }

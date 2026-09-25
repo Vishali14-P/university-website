@@ -1,13 +1,39 @@
 function About() {
-return (
-<section id="about" className="section">
-    <h2>About ASTRA</h2>
-    <p>
-    ASTRA provides quality education and practical learning.
-    We encourage students to develop knowledge, skills and confidence
-    to build a successful future.
-    </p>
-</section>
-);
+    return (
+        <section className="section">
+
+            <h2>About SRM EASWARI ENGINEERING COLLEGE</h2>
+
+            <p>
+                SRM EASWARI ENGINEERING COLLEGE is committed to providing quality education,
+                practical learning and opportunities for students to develop
+                knowledge, skills and confidence for their future.
+            </p>
+
+            <div className="cards">
+
+                <div className="card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To become a leading institution that inspires
+                        innovation, knowledge and responsible leadership
+                        for a better future.
+                    </p>
+                </div>
+
+                <div className="card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To provide quality education, encourage practical
+                        learning and develop skilled professionals who can
+                        contribute to society.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+    );
 }
+
 export default About;
